@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bill spliter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  
+  <div id="main">
+    <div id="bill-input">
+      <h2>Bill</h2>
+      <div class="input-container">
+        <span>Rs:</span>
+        <input id="userInput" type="number">
+      </div>
+      <div id="tip-field">
+        <h5>Select Tip</h5>
+        <div  class="tip-container disabled">
+          <button class="tip">10%</button>
+          <button class="tip">15%</button>
+          <button class="tip">20%</button>
+          <button class="tip">25%</button>
+          <button class="tip">30%</button>
+          <button class="tip">50%</button>
+        </div>
+        <input class="custom-input gray-input" type="number" placeholder="Custom tip by percentage" disabled>
+        <h5>Number of people</h5>
+        <input class="num-of-people" type="number" disabled>
+        <button class="generate-btn" disabled>Generate Bill</button>
+      </div>
+    </div>
+    <div class="bill-output">
+      <p class="tip-amount">Tip amount <span></span></p>
+      <p class="total">Total <span></span></p>
+      <p class="each-person-bill">Each Person Bill <span></span></p>
+      <button id="reset-btn" disabled>Reset</button>
+    </div>
+
+
+  </div>
+</body>
+</html>
